@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
  * main - print arg size
- * Description: 'the program's description'
+ * Description: "the program's description"
  * this is a size of program
  */
 int main(void)
