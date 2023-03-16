@@ -1,5 +1,6 @@
 #include <stdio.h>
 /*
+ * main - print arg size
  * this is a size of program
  */
 int main(void)
