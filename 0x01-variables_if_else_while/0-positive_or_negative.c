@@ -5,8 +5,8 @@
 
 /**
  * betty style doc for function main goes there 
- * function : will chech the btengan
- * main : wil 
+ * function:will chech the btengan
+ * main:wil 
  */
 int main(void)
 {
