@@ -3,8 +3,10 @@
 #include <time.h>
 /* more headers goes there */
 
-/** betty style doc for function main goes there 
+/**
+ * betty style doc for function main goes there 
  * function : will chech the btengan
+ * main : wil 
  */
 int main(void)
 {
