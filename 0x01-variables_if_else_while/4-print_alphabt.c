@@ -14,7 +14,7 @@ for (i = 'a'; i <= 'z'; i++)
 {
 	if (i != 'q')
 	{
-	if( i != 'e')
+	if (i != 'e')
 		putchar (i);
 	}
 }
