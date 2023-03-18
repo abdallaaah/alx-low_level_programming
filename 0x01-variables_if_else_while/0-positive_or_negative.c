@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* main - this the description of the main */
+/**
+ *  main - This the description of the main
+ *  hello
+ *  */
 int main(void)
 {
 	int n;
