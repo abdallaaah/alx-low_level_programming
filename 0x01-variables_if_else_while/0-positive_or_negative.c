@@ -6,7 +6,7 @@
 * betty style doc for function main goes there 
 * Description:  A column of asterisks on the left side,
 * main - this is test descp 
-*/
+ */
 
 int main(void)
 {
