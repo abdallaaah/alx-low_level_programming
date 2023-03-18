@@ -3,8 +3,6 @@
 #include <time.h>
 /* more headers goes there */
 /** 
- * betty style doc for function main goes there. 
- * Description:  A column of asterisks on the left side,
  * main - this is test descp 
  */
 
@@ -16,7 +14,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive\n", n);
+	 printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
