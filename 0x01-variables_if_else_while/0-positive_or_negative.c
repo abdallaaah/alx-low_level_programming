@@ -4,8 +4,8 @@
 
 /**
  *  main - This the description of the main
- *  hello
- *  */
+ *  Return: alwayes (Success)
+ */
 int main(void)
 {
 	int n;
