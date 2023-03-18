@@ -4,7 +4,7 @@
 
 /**
  *  main - This the description of the main
- *  Return: alwayes (Success)
+ *  Retsrn: alwayes (Success)
  */
 int main(void)
 {
