@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - the main
  * Return: always(Sucess)
@@ -11,12 +12,9 @@ char i;
 
 for (i = 'a'; i <= 'z'; i++)
 {
-
-putchar(i);
-
+putchar (i);
 }
-putchar('\n');
-
+putchar ('\n');
 return(0);
 
 }
