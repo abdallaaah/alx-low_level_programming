@@ -3,9 +3,9 @@
 #include <time.h>
 /* more headers goes there */
 /** 
- * betty style doc for function main goes there 
- * Description:  A column of asterisks on the left side, 
- */
+* betty style doc for function main goes there 
+* Description:  A column of asterisks on the left side, 
+*/
 
 int main(void)
 {
