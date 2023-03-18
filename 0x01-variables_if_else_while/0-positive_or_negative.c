@@ -3,11 +3,6 @@
 #include <time.h>
 
 /* more headers goes there */
-
-/** 
- * main - this is test descp 
- */
-
 int main(void)
 {
 	int n;
