@@ -4,8 +4,7 @@
 /* more headers goes there */
 /** 
  * betty style doc for function main goes there 
- * function:will chech the btengan
- * main:wil 
+ * Description:  A column of asterisks on the left side, 
  */
 
 int main(void)
