@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - check the code
- * Return - puthcar word
+ * Return:  puthcar word
  */
 int main(void)
 {
@@ -15,6 +15,7 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
+
 return (0);
 
 }
