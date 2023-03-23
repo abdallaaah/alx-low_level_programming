@@ -5,10 +5,9 @@
  */
 int main(void)
 {
-//char message[10];
 int i=0;
 char message[] = "_putchar";
-while(message[i] != '\n');
+while(message[i] != '\n')
 {
 putchar(message[i]);
 i++;
