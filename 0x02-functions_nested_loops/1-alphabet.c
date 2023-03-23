@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphapet - check the code
+ * print_alphapet -> check the code
  *
- * print_alphabet -> write the small alphapetic
  */
 void print_alphabet(void)
 {
