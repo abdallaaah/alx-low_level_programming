@@ -1,17 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - check the code
  * Return - puthcar word
  */
 int main(void)
 {
-int i=0;
-char message[] = "_putchar";
-while(message[i] != '\n' && message[i] != '\0')
-{
-putchar(message[i]);
-i++;
-}
-putchar(32);
+
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
+
 }
