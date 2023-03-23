@@ -3,7 +3,7 @@
 /**
  * print_alphapet - check the code
  *
- * Return: Always 0.
+ * Return: write the small alphapetic
  */
 void print_alphabet(void)
 {
