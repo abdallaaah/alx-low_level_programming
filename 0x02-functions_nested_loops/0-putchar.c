@@ -12,7 +12,6 @@ while(message[i] != '\n')
 putchar(message[i]);
 i++;
 }
-//putchar(message);
 putchar(32);
 return (0);
 }
