@@ -1,7 +1,7 @@
 #include <ctype.h>
 
 /**
- * _islower : check
+ *_islower : check
  *@c: is argumaent
  *Return: return in lower 
  */
