@@ -1,9 +1,9 @@
 #include "main.h"
 
 /*
- *print_sign -> chech number
- *@n: the number we will check
- *Return: return the 
+ * print_sign -> chech number
+ * @n: the number we will check
+ * Return: return the 
  *
  */
 
