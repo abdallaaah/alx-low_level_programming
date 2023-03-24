@@ -3,8 +3,7 @@
 /**
  * print_sign - chech number
  * @n: the number we will check
- * Return: return the 
- *
+ * Return: return the
  */
 
 int print_sign(int n)
