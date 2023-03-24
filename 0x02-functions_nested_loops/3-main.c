@@ -1,10 +1,12 @@
 #include <ctype.h>
 #include "main.h"
+
 /**
- * mainz - check the code
+ *main - check the code
  *@r: declare
  * Return: Always zero
  */
+
 int main(void)
 {
 int r;
