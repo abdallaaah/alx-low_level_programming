@@ -1,4 +1,5 @@
 #include <ctype.h>
+
 /**
  * _islower : check
  *@c: is argumaent
