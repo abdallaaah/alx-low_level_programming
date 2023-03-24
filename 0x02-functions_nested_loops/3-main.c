@@ -3,13 +3,13 @@
 
 /**
  *main - check the code
- *@r: declare
  *Return: Always zero
  */
 
 int main(void)
 {
 int r;
+
 r = _islower('H');
 _putchar(r + '0');
 r = _islower('o');
