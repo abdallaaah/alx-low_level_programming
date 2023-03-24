@@ -2,7 +2,7 @@
 
 /**
  * main - check the code.
- *
+ *@r: declare
  * Return: Always 0.
  */
 int main(void)
