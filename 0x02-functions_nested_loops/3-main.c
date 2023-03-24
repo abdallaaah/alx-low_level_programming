@@ -4,7 +4,7 @@
 /**
  *main - check the code
  *@r: declare
- * Return: Always zero
+ *Return: Always zero
  */
 
 int main(void)
