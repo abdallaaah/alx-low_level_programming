@@ -1,12 +1,10 @@
 #include <ctype.h>
 #include "main.h"
-
 /**
  *main - check the code
  *@r: delclare
  *Return: Always zero
  */
-
 int main(void)
 {
 int r;
