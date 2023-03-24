@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * print_sign -> chech number
+/**
+ * print_sign - chech number
  * @n: the number we will check
  * Return: return the 
  *
