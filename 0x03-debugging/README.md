@@ -1,3 +1,5 @@
+0x03. C - Debugging
+
 0. Multiple mains
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
