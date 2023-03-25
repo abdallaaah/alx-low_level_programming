@@ -10,20 +10,20 @@
 
 int largest_number(int a, int b, int c)
 {
-int largest;
-largest = -99;
-if (a > largest)
-{
-largest = a;
-}
-else if (b > largest)
-{
-largest = b;
-}
-else
-{
-largest = c;
-}
+    int largest;
 
-return (largest);
+    if (a > b && a > c)
+    {
+        largest = a;
+    }
+    else if (b > a && b > c)
+    {
+        largest = b;
+    }
+    else
+    {
+        largest = c;
+    }
+
+    return (largest);
 }
