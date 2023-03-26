@@ -2,24 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 
+/* more headers goes there */
+
 /**
- * mian - make a compination
- * return: always(succes)
- *
+ * main - Define the last digit
+ * Return: always(Success)
  */
+
 int main(void)
 {
-int i;
-int z;
-for(i=0;i<=9;i++)
-{
-	for(z=1;z<=9;z++)
-	{
-		putchar(48+i);
-		putchar(48+z);
-
-	}
-
-}
-return (0);
 }
