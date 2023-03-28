@@ -13,7 +13,7 @@ for (i = 0; i < n; i++)
 {
 if (n <= 0)
 {
-printf("\n");
+printf("%d\n", a[i]);
 break;
 }
 if (i + 1 == n && n > 0)
