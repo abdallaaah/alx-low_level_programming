@@ -15,6 +15,9 @@ if (i + 1 == n)
 {
 printf("%d\n", a[i]);
 }
+else
+{
 printf("%d, ", a[i]);
+}
 }
 }
