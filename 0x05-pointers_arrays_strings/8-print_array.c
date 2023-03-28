@@ -14,7 +14,7 @@ for (i = 0; i < n; i++)
 if (i + 1 == n && n > 0)
 {
 printf("%d\n", a[i]);
-printf('\n');
+printf("\n");
 }
 else
 {
