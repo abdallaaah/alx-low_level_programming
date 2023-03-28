@@ -10,16 +10,18 @@ int _atoi(char *s)
 int res;
 int i;
 int x;
-int sign;
-res = 0;
-sign = 1;
-i = 0;
-x = 0;
+int signNeg;
+int signPos;
+res = 0, signNeg = 0, signPos = 0, i = 0, x = 0;
 while (s[i] != '\0')
 {
 if (s[i] == 45)
 {
-sign = sign * -1;
+signNeg =+ 1;
+}
+if (s[i] == 43)
+{
+signPos =+ 1;
 }
 i++;
 }
@@ -35,7 +37,7 @@ break;
 }
 x++;
 }
-if (sign == 1)
+if (signPos >= signNeg)
 {
 return (res);
 }
