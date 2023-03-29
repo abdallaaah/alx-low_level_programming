@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 /**
  * _atoi: convert
  * @s: ssr r 
@@ -12,20 +14,30 @@ int i;
 int x;
 int signNeg;
 int signPos;
+int len;
 res = 0, signNeg = 0, signPos = 0, i = 0, x = 0;
-while (s[i] != '\0')
+len = strlen(s);
+while (i < len)
 {
 if (s[i] == 45)
 {
-signNeg =+ 1;
+signNeg++;
+if (s[i+1] >=48 && s[i+1] < 58)
+{
+break;
+}
 }
 if (s[i] == 43)
 {
-signPos =+ 1;
+signPos++;
+if (s[i+1] >=48 && s[i+1] < 58)
+{
+break;
+}
 }
 i++;
 }
-while (s[x] != '\0')
+while (x < len)
 {
 if (s[x] >= 48 && s[x] < 58)
 {
