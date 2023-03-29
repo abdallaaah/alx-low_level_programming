@@ -1,6 +1,6 @@
 #include "main.h"
 #include <string.h>
-/*
+/**
  * strcmp - compare two string
  * @s1: sds
  * @s2: sfgd
