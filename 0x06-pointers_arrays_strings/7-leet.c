@@ -9,7 +9,7 @@ char *leet(char *s)
 {
 char *result;
 char *leet_map[256] = {0};
-*result = s;
+result = s;
 leet_map['a'] = leet_map['A'] = "4";
 leet_map['e'] = leet_map['E'] = "3";
 leet_map['o'] = leet_map['O'] = "0";
