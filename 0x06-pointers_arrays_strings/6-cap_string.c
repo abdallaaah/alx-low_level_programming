@@ -1,19 +1,23 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 /**
- * cap_string - captilize string
- * @str: string
+ * cap_string - captalize everu first char
+ * @x: the string we will captalize
+ * Return: return the string after captlizing
  */
-char *cap_string(char *str) {
-int i = 0;
-while (str[i] != '\0')
+char *cap_string(char *x)
 {
-if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n' || str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}')
+int i;
+int len;
+len = strlen(x);
+for (i = 0; i < len; i++)
 {
-str[i] = toupper(str[i]);
+if((i > 1) && (x[i-1] == ' ' || x[i-1] == ',' || x[i-1] == ';' || x[i-1] == '.' || x[i-1] == '!' || x[i-1] == '?' || x[i-1] == '"' || x[i-1] == '(' || x[i-1] == ')' || x[i-1] == '{' || x[i-1] == '}' || x[i-1] == '\n'))
+{
+x[i] = toupper(x[i]);
 }
-i++;
 }
-return (str);
+return (x);
 }
+
