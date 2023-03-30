@@ -2,35 +2,34 @@
 #include <string.h>
 /**
  * leet - encode function
- * @x: string
+ * @s: string
  * Return: return new string
  */
-char *leet(char *x)
+char *leet(char *s)
 {
-int i;
-while (x[i] != '\n')
+char *result;
+char *leet_map[256] = {0};
+*result = s;
+leet_map['a'] = leet_map['A'] = "4";
+leet_map['e'] = leet_map['E'] = "3";
+leet_map['o'] = leet_map['O'] = "0";
+leet_map['t'] = leet_map['T'] = "7";
+leet_map['l'] = leet_map['L'] = "1";
+for ( ; *s; ++s)
 {
-if (x[i] == 97 || x[i] == 65)
+char *leet_char = leet_map[*s];
+if (leet_char != NULL)
 {
-x[i] = 52;
+for ( ; *leet_char; ++leet_char, ++result)
+{
+*result = *leet_char;
 }
-else if (x[i] == 101 || x[i] == 69)
+}
+else
 {
-x[i] = 51;
+*result++ = *s;
 }
-else if (x[i] == 79 || x[i] == 111)
-{
-x[i] = 48;
 }
-else if (x[i] == 84 || x[i] == 116)
-{
-x[i] = 55;
-}
-else if (x[i] == 76 || x[i] == 108)
-{
-x[i] = 49;
-}
-i++;
-}
-return (x);
+*result = '\0';
+return (result);
 }
