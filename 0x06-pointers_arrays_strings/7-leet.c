@@ -27,11 +27,11 @@ if (c >= 'a' && c <= 'z')
 s[i] = arr[c - 'a'];
 /*printf("the current letter is : %c\n",s[i]);*/
 }
-else
+/*else
 {
 s[i] = arr[c - 'A'];
-/*printf("the current letter is : %c\n",s[i]);*/
-}
+printf("the current letter is : %c\n",s[i]);
+}*/
 }
 return (s);
 }
