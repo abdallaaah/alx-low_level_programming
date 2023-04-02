@@ -21,3 +21,16 @@ for ( ; y <= 9; y++)
 if (x != y)
 {
 putchar(x + 48);
+putchar(x + 48);
+if (!(x == 8 && y == 9))
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+y = x + 1;
+}
+putchar('\n');
+return (0);
+}
