@@ -14,9 +14,9 @@ y = 1;
 z = 2;
 for (x = 0; x <= 7; x++)
 {
-for (; y <= 8; y++)
+for (y = x + 1; y <= 8; y++)
 {
-for (; z <= 9; z++)
+for (z = y + 1; z <= 9; z++)
 {
 if (x != y && y != z && x != z)
 {
@@ -30,9 +30,7 @@ putchar(' ');
 }
 }
 }
-z = x + 4;
 }
-y = x + 1;
 }
 putchar('\n');
 return (0);
