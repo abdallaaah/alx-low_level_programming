@@ -35,8 +35,5 @@ z = x + 2;
 y = x + 1;
 }
 putchar('\n');
-printf("x is equal : %d\n",x);
-printf("y is equal : %d\n",y);
-printf("z is equal : %d\n",z);
 return (0);
 }
