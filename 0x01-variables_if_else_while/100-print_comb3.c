@@ -13,15 +13,29 @@ int main(void)
 {
 int x;
 int y;
+y = 1;
+/*int flag;
+flag = 0;*/
 for (x = 0; x <= 8; x++)
 {
-for (y = 1; y <= 9; y++)
+for ( ; y <= 9; y++)
+{
+/*if (y - x == 1)
+{
+flag = 1;
+}*/
+if ( x != y)
 {
 putchar(x + 48);
 putchar(y + 48);
+if (!(x == 8 && y == 9))
+{
 putchar(',');
 putchar(' ');
 }
+}
+}
+y = x+1;
 }
 putchar('\n');
 return (0);
