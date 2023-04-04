@@ -1,9 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
- * strchr - sting search function
- * @c: char we will search
- * Return: this will return the string we find with all next
+ * _strchr - sting search function
+ * @s: the string we will search on
+ * @c: this the char we search for
+ * Return: return all function
  */
 char *_strchr(char *s, char c)
 {
