@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strlen_recursion - kdnkf
+ * _strlen_recursion - find rhw lwnghth
  * @s: skmdss
- * Reutrn: number
+ * Return: len of string
  */
 int _strlen_recursion(char *s)
 {
