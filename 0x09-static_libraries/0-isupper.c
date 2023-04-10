@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-void _puts(char *s)
+int _isupper(int c)
 {
-puts(s);
 }
