@@ -12,11 +12,11 @@ int r;
 if (argc == 3)
 {
 r = atoi(argv[1]) * atoi(argv[2]);
-printf("%d",r);
+printf("%d", r);
 }
 else
 {
-printf ("Error\n");
+printf("Error\n");
 return (1);
 }
 return (0);
