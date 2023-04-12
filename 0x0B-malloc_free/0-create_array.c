@@ -26,6 +26,6 @@ return (str);
 }
 else
 {
-return ("NULL");
+return (NULL);
 }
 }
