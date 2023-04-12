@@ -24,7 +24,7 @@ str[i] = c;
 }
 return (str);
 }
-else if (str == NULL)
+else
 {
 return (NULL);
 }
