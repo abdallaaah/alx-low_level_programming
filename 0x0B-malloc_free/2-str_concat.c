@@ -14,7 +14,7 @@ char *new_str;
 unsigned int size;
 size = strlen(s1) + strlen(s2);
 new_str = malloc((sizeof(char) * size) +1);
-if (new_str == NULL || s1 == NULL || s2 == NULL)
+if (new_str == NULL)
 {
 return (NULL);
 }
