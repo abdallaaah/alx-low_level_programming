@@ -17,7 +17,7 @@ size = sizeof(str);
 new_str = malloc(size);
 new_str = strdup(str);
 }
-else if (str == NULL)
+else if (str == NULL || new_str == NULL)
 {
 return (NULL);
 }
