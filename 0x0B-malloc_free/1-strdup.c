@@ -26,6 +26,6 @@ if (new_str == NULL)
 {
 return (NULL);
 }
-new_str[i - 1] = '\0';
+new_str[i] = '\0';
 return (new_str);
 }
