@@ -2,14 +2,23 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+/**
+ * str_concat - conacatine two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: return the new string
+ */
 char *str_concat(char *s1, char *s2)
 {
 char *new_str;
-int ss1;
-int ss2;
-ss1 = sizeof(s1);
-ss2 = sizeof(s2);
-new_str = malloc(ss1 + ss2);
-new_str = strcat(s1, s2);
+unsigned int size;
+size = strlen(s1) + strlen(s2);
+new_str = malloc((sizeof(char) * size) +1);
+if (new_str == NULL || s1 == NULL || s2 == NULL)
+{
+return (NULL);
+}
+strcpy(new_str, s1);
+new_str = strcat(new_str, s2);
 return (new_str);
 }
