@@ -9,6 +9,10 @@
  */
 char *_strdup(char *str)
 {
+if (str == NULL)
+{
+return (NULL);
+}
 int size;
 char *new_str;
 size = sizeof(str);
