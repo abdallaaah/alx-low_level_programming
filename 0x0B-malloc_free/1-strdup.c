@@ -14,7 +14,7 @@ if (strdup(str))
 {
 new_str = strdup(str);
 }
-else
+else if (str == NULL)
 {
 return (NULL);
 }
