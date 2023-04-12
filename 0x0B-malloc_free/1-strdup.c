@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ * _strdup - finction which duplicate string
+ * @str: string need to be dup
+ * Return: return the string
+ */
 char *_strdup(char *str)
 {
 char *new_str;
