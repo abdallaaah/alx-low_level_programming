@@ -14,9 +14,9 @@ if (str == NULL)
 {
 return (NULL);
 }
-new_str = (char *)malloc(sizeof(str));
+new_str = (char *)malloc(sizeof(str) + 1);
 new_str = strdup(str);
-if (str == NULL || new_str == NULL)
+if (new_str == NULL)
 {
 return (NULL);
 }
