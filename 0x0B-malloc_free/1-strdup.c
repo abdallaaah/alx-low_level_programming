@@ -20,11 +20,12 @@ while (str[i])
 {
 i++;
 }
-new_str = malloc((sizeof(char) * i) + 1);
+new_str = malloc((sizeof(char) * i) +1);
 new_str = strdup(str);
 if (new_str == NULL)
 {
 return (NULL);
 }
+new_str[i - 1] = '\0';
 return (new_str);
 }
