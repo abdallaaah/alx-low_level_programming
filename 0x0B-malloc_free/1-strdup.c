@@ -9,9 +9,12 @@
  */
 char *_strdup(char *str)
 {
+int size;
 char *new_str;
 if (strdup(str))
 {
+size = sizeof(str);
+new_str = malloc(size);
 new_str = strdup(str);
 }
 else if (str == NULL)
