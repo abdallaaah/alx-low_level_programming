@@ -14,6 +14,14 @@ if (argc <= 1)
 {
 printf("Error\n");
 }
+for (x= 0; x < argc, x++)
+{
+if (atoi(argv[i]))
+{
+printf("Error\n");
+return (1);
+}
+}
 else
 {
 for (i = 1; i < argc; i++)
@@ -22,13 +30,8 @@ if (atoi(argv[i]) || atoi(argv[i]) != '0')
 {
 result += atoi(argv[i]);
 }
-else
-{
-printf("Error\n");
-return (1);
 }
 }
 printf("%d\n", result);
-}
 return (0);
 }

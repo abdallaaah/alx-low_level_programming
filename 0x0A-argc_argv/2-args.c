@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - return argc
- * @argc: muber of arguments
- * @argv: string with 
- * Return: return argc
+ * main - return the agsv words
+ * @argc: paramters count
+ * @argv: the string it self
+ * Return: return the words
  */
 int main(int argc, char *argv[])
 {
