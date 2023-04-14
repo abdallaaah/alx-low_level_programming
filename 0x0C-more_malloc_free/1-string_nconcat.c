@@ -22,7 +22,6 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-sz1 = strlen(s1);
 sz2 = strlen(s2);
 tot = strlen(s1) + strlen(s2);
 ptr = malloc((sizeof(char) * tot)+1);
