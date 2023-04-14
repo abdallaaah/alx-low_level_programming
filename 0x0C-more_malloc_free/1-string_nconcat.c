@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * string_nconcat - cocatine two strings
- * @s1: string one
- * @s2: string two
- * @n: number
- * Return: return pointer
+ * string_nconcat - string cocatinate two string
+ * @s1: the first one
+ * @s2: the second one
+ * @n: the number we will conca
+ * Return: return pon
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-{       
+{
 char *ptr;
 int tot;
 unsigned int sz2;
@@ -35,4 +35,4 @@ if (sz2 - 1 != n)
 strncat(ptr, s2, n);
 }
 return (ptr);
-}       
+}
