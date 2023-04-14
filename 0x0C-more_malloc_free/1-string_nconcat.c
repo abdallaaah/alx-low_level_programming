@@ -30,7 +30,7 @@ if (ptr == NULL)
 return (NULL);
 }
 ptr = strcpy(ptr, s1);
-if (sz2 != n)
+if (sz2 - 1 != n)
 {
 strncat(ptr, s2, n);
 }
