@@ -38,5 +38,6 @@ else if (sz2 - 1 != n)
 {
 strncat(ptr, s2, n);
 }
+ptr[tot + 1] = '\0';
 return (ptr);
 }
