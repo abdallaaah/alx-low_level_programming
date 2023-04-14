@@ -40,6 +40,5 @@ else if (sz2 - 1 != n)
 {
 strncat(ptr, s2, n);
 }
-ptr[sz1 + n] = '\0';
 return (ptr);
 }
