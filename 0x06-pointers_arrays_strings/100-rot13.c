@@ -16,10 +16,12 @@ for (i = 0; i < len; i++)
 c = s[i];
 if (c >= 'a' && c <= 'z')
 {
-ii = 0;
-while(c != arr[ii])
+for (ii = 0; ; ii++)
 {
-ii++;
+if (c == arr[ii])
+{
+break;
+}
 }
 if (ii < 13)
 {
