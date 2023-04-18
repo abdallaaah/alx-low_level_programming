@@ -1,6 +1,4 @@
 #include "dog.h"
-#include "main.h"
-#include <stdio.h>
 /**
  * init_dog - dog description
  * @name: name of dog
