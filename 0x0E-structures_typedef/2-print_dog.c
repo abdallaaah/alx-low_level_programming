@@ -14,7 +14,7 @@ printf("Name: (nil)");
 }
 if (d == NULL)
 {
-printf("(nil)");
+return;
 }
 printf("Name: %s\n", d->name);
 printf("Age: %f\n", d->age);
