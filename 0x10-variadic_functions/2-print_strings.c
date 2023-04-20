@@ -33,7 +33,7 @@ else if (flag == 0)
 {
 printf("%s%s", str, separator);
 }
-if (separator != NULL && i == n - 1 && flag == 1)
+else if (separator != NULL && i == n - 1 && flag == 1)
 {
 printf("%s", str);
 }
