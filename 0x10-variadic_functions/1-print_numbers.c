@@ -13,7 +13,6 @@ int temp;
 va_list ptr;
 if (separator != NULL)
 {
-return;
 va_start(ptr, n);
 for (i = 0; i < n; i++)
 {
