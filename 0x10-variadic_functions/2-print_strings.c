@@ -14,6 +14,10 @@ const char *str;
 int flag;
 flag = 0;
 va_start(ptr, n);
+if (separator == NULL)
+{
+return;
+}
 for (i = 0; i < n; i++)
 {
 if (i == n - 1)
