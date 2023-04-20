@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <stdarg.h>
+/**
+ * print_all - print all functions
+ * @format: the string format
+ * Return: nothing
+ */
 void print_all(const char * const format, ...)
 {
 int i = 0;
