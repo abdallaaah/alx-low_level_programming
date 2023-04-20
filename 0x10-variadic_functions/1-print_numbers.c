@@ -18,11 +18,15 @@ for (i = 0; i < n; i++)
 {
 temp = va_arg(ptr, int);
 if (i == n - 1 && separator != NULL)
+{
 printf("%d", temp);
+printf("\n");
+}
 else
+{
 printf("%d%s", temp, separator);
 }
-printf("\n");
 va_end(ptr);
+}
 }
 }
