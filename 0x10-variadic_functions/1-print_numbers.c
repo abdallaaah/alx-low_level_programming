@@ -26,7 +26,7 @@ else
 {
 printf("%d%s", temp, separator);
 }
-va_end(ptr);
 }
+va_end(ptr);
 }
 }
