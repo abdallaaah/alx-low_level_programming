@@ -1,16 +1,15 @@
 #include "function_pointers.h"
 #include <stdio.h>
+/**
+ * array_iterator - array iterrator with pointer function
+ * @array: array filled of numbers
+ * @size: size of aray
+ * @action: pointer to function
+ */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-/**
- * array_iterator - iterate over array with display
- * @array: array
- * @size: times of array
- * @action: action
- * Return: nothing it void
- */
-unsigned int i;
-if (array == NULL || action == NULL)
+size_t i;
+if (array == NULL || size == 0 || action == NULL)
 {
 return;
 }
