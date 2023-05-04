@@ -22,7 +22,7 @@ return (ptr);
 }
 else
 {
-while(temp->next != NULL)
+while(temp->next)
 {
 temp = temp->next;
 }
