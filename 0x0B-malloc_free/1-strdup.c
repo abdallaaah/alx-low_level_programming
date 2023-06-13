@@ -25,7 +25,7 @@ if (arr == NULL)
 free(arr);
 return (NULL);
 }
-for (i = 0; i < str[i]; i++)
+for (i = 0;  str[i]; i++)
 {
 arr[i] = str[i];
 }
