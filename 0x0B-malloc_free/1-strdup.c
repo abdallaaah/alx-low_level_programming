@@ -15,11 +15,11 @@ if (str == NULL)
 {
 return (NULL);
 }
-while(str[i])
+while(str[i] != '\0')
 {
 i++;
 }
-arr = (char *)malloc((sizeof(char) * i) + 1);
+arr = (char *)malloc((sizeof(char) * i)+ 1);
 if (arr == NULL)
 {
 free(arr);
