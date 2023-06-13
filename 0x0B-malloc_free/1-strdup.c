@@ -19,7 +19,7 @@ while(str[i])
 {
 i++;
 }
-arr = malloc((sizeof(char) * i) + 1);
+arr = (char *)malloc((sizeof(char) * i) + 1);
 if (arr == NULL)
 {
 free(arr);
