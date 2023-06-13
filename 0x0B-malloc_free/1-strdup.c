@@ -19,16 +19,15 @@ while(str[i] != '\0')
 {
 i++;
 }
-arr = (char *)malloc((sizeof(char) * i)+ 1);
+arr = malloc(sizeof(char) * (i + 1));
 if (arr == NULL)
 {
 free(arr);
 return (NULL);
 }
-arr = strdup(str);
-if (arr == NULL)
+for (i = 0; i < str[i]; i++)
 {
-return (NULL);
+arr[i] = str[i];
 }
 return (arr);
 }
