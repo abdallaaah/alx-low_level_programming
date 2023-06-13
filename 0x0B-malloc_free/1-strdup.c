@@ -14,8 +14,7 @@ if (str == NULL || strlen(str) == 0)
 {
 return (NULL);
 }
-/*arr = malloc(strlen(str) * sizeof(char));*/
-arr = (char *) malloc(strlen(str) + 1);
+arr = malloc((strlen(str)) * sizeof(char *));
 if (arr == NULL)
 {
 free(arr);
