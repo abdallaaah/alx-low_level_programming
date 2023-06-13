@@ -30,7 +30,7 @@ while (s2[lens2] != '\0')
 lens2++;
 }
 len = lens1 + lens2;
-new_string = malloc((len * sizeof(char) + 1));
+new_string = malloc((len *sizeof(char) + 1));
 if (new_string == NULL)
 {
 free(new_string);
