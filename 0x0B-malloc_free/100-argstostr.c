@@ -33,6 +33,5 @@ z++;
 arr[z] = '\n';
 z++;
 }
-arr[z] = '\n';
 return (arr);
 }
