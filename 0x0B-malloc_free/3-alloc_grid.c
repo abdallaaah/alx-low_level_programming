@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ * **alloc_grid - function returns 2 pointer array
+ * @width: the width of array
+ * @height: the height of it
+ * Return: return the 2d array
+ */
 int **alloc_grid(int width, int height)
 {
 int **arr;
@@ -33,12 +39,5 @@ free(arr);
 return (NULL);
 }
 }
-/*for (i = 0; i < height; i++)
-{
-for (x = 0; x < width; x++)
-{
-arr[i][x] = 0;
-}
-}*/
 return (arr);
 }
