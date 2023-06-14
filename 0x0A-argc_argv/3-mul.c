@@ -10,14 +10,14 @@ int main(int argc, char *argv[])
 {
 int res = 0;
 int num1 = 0, num2 = 0;
-if (argc < 3 )
+if (argc < 3)
 {
 printf("ERROR\n");
-return (0);
+return (1);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-res = num1 * num2;
+res = (num1 *num2);
 printf("%d\n", res);
 return (0);
 }
