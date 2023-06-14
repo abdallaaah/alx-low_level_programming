@@ -12,7 +12,7 @@ int res = 0;
 int num1 = 0, num2 = 0;
 if (argc < 3)
 {
-printf("ERROR\n");
+printf("Error\n");
 return (1);
 }
 num1 = atoi(argv[1]);
