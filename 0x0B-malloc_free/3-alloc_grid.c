@@ -14,7 +14,7 @@ if (height <= 0)
 {
 return (NULL);
 }
-arr = malloc(sizeof(int) * height);
+arr = malloc(sizeof(int *) * height);
 if (arr == NULL)
 {
 free(arr);
@@ -33,12 +33,12 @@ free(arr);
 return (NULL);
 }
 }
-for (i = 0; i < height; i++)
+/*for (i = 0; i < height; i++)
 {
 for (x = 0; x < width; x++)
 {
 arr[i][x] = 0;
 }
-}
+}*/
 return (arr);
 }
