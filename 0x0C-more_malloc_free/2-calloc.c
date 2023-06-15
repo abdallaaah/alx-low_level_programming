@@ -17,5 +17,6 @@ if (ptr == NULL)
 {
 return (NULL);
 }
+memset(ptr, 0, size);
 return (ptr);
 }
