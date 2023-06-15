@@ -28,8 +28,7 @@ return (NULL);
 }
 for (i = 0; i <= max; i++)
 {
-*ptr = s;
-ptr++;
+ptr[i] = s;
 s++;
 }
 ptr = ptrr;
