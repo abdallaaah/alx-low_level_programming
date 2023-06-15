@@ -32,5 +32,6 @@ for (i = 0; i <= max; i++)
 ptr++;
 s++;
 }
-return (ptrr);
+ptr = ptrr;
+return (ptr);
 }
