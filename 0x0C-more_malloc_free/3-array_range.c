@@ -19,7 +19,7 @@ for (i = 0; i <= max; i++)
 {
 z++;
 }
-ptr = malloc(sizeof(int) * (z + 1));
+ptr = malloc(sizeof(int) * z);
 if (ptr == NULL)
 {
 free(ptr);
