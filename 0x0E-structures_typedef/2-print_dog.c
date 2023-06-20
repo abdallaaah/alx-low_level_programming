@@ -12,7 +12,7 @@ return;
 }
 if (d->name == NULL)
 {
-printf("Name: (nil)");
+printf("(nil)");
 }
 if (d->owner == NULL)
 {
