@@ -4,7 +4,7 @@
  * @name: name of human
  * @f: function pointe
  * Return - void no return
- */
+ **/
 void print_name(char *name, void (*f)(char *))
 {
 if (f == NULL || name == NULL)
