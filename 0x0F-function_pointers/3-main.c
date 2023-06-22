@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 int num1;
