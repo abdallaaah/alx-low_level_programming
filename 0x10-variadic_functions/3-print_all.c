@@ -35,12 +35,9 @@ case 's':
 xx = va_arg(arg, char *);
 if (xx == NULL)
 {
-printf("nil");
+xx = "(nil)";
 }
-else
-{
 printf("%s", xx);
-}
 break;
 }
 if (format[i + 1] != '\0' && (format[i] == 's' || format[i] == 'i' || format[i] == 'c' || format[i] == 'f'))
