@@ -11,14 +11,14 @@ va_list ptr;
 unsigned int i = 0;
 char *str;
 va_start(ptr, n);
-for(i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 str = va_arg(ptr, char *);
-if(str == NULL)
+if (str == NULL)
 printf("(nil)");
 else
 printf("%s", str);
-if(separator && i != n-1)
+if (separator && i != n - 1)
 printf("%s", separator);
 }
 va_end(ptr);
