@@ -14,6 +14,8 @@ if (separator == NULL)
 {
 return;
 }
+else
+{
 for (i = 0; i < n; i++)
 {
 if (i == n - 1)
@@ -24,4 +26,5 @@ else
 printf("%d%s", va_arg(ptr, int), separator);
 }
 printf("\n");
+}
 }
