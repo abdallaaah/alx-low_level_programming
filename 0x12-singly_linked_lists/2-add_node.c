@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * add_node - function to add node
+ * @head: the head of the linked list
+ * @str: the string will copy
+ * Return: the new node
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *new_node = malloc(sizeof(list_t));
