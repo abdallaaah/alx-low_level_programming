@@ -16,4 +16,5 @@ free(temp);
 }
 current = NULL;
 *head = NULL;
+free(current);
 }
