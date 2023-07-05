@@ -26,12 +26,18 @@ else
 {
 current = *head;
 new = malloc(sizeof(listint_t));
-if (new == NULL)
+if (new == NULL || head == NULL)
 {
 free(new);
 return (NULL);
 }
 new->n = n;
+if (idx == 0)
+{
+new->next = *head;
+*head = new;
+return (new);
+}
 for (i = 0; i < idx - 1; i++)
 {
 current = current->next;
