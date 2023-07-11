@@ -29,7 +29,7 @@ fclose(file);
 return (0);
 }
 w = fwrite(buf, sizeof(char), t, stdout);
-if (w != t)
+if (w == -1 || w != t)
 {
 free(buf);
 fclose(file);
