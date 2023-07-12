@@ -22,7 +22,6 @@ fclose(file);
 return (0);
 }
 num = fread(buff, sizeof(char), letters, file);
-printf("letters is : %ld num is :%ld\n", letters, num);
 if (num == 0)
 {
 free(buff);
@@ -37,5 +36,5 @@ fclose(file);
 }
 free(buff);
 fclose(file);
-return (num);
+return (w);
 }
