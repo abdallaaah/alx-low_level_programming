@@ -1,41 +1,41 @@
 #include "main.h"
-/**
- * read_textfile - function to read text from file and display it
- * @filename: the file name will display
- * @letters: the numnbers of letters ijn file
- * Return: number of lettetrs
- */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t w, t;
+ssize_t num;
+ssize_t w = 0;
+char *buff;
 FILE *file;
-char *buf;
 if (filename == NULL)
+{
 return (0);
+}
 file = fopen(filename, "r");
 if (file == NULL)
-return (0);
-buf = malloc(sizeof(char) * letters);
-if (buf == NULL)
 {
+return (0);
+}
+buff = malloc(sizeof(char) * letters);
+if (buff == NULL)
+{
+free(buff);
 fclose(file);
 return (0);
 }
-t = fread(buf, sizeof(char), letters, file);
-if (t == 0)
+num = fread(buff, sizeof(char), letters, file);
+printf("letters is : %ld num is :%ld\n", letters, num);
+if (num == 0)
 {
-free(buf);
+free(buff);
 fclose(file);
 return (0);
 }
-w = fwrite(buf, sizeof(char), t, stdout);
-if (w == -1 || w != t)
+w = fwrite(buff, sizeof(char), num, stdout);
+if (w == -1 || w != num)
 {
-free(buf);
+free(buff);
 fclose(file);
-return (0);
 }
-free(buf);
+free(buff);
 fclose(file);
-return (w);
+return (num);
 }
