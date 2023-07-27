@@ -1,41 +1,41 @@
 #include "main.h"
+
 ssize_t read_textfile(const char *filename, size_t letters) {
-    ssize_t num;
-    ssize_t w = 0;
-    char *buff;
-    FILE *file;
-    size_t file_size;
+    size_t num_read = 0;
+    char *buffer = NULL;
+    FILE *file = NULL;
 
     if (filename == NULL) {
-        return (0);
+        return 0;
     }
+
     file = fopen(filename, "r");
     if (file == NULL) {
-        return (0);
+        return 0;
     }
-    fseek(file, 0, SEEK_END);
-    file_size = ftell(file);
-    fseek(file, 0, SEEK_SET);
-    letters = (letters > ( file_size) ? file_size : letters);
 
-    buff = malloc(sizeof(char) * letters);
-    if (buff == NULL) {
-        free(buff);
+    buffer = (char *) malloc(sizeof(char) * (letters + 1));
+    if (buffer == NULL) {
         fclose(file);
-        return (0);
+        return 0;
     }
-    num = fread(buff, sizeof(char), letters, file);
-    if (num == 0) {
-        free(buff);
+
+    num_read = fread(buffer, sizeof(char), letters, file);
+    if (num_read == 0) {
+        free(buffer);
         fclose(file);
-        return (0);
+        return 0;
     }
-    w = fwrite(buff, sizeof(char), num, stdout);
-    if (w == -1 || w != num) {
-        free(buff);
+
+    buffer[num_read] = '\0';
+
+    if (fwrite(buffer, sizeof(char), num_read, stdout) != num_read) {
+        free(buffer);
         fclose(file);
+        return 0;
     }
-    free(buff);
+
+    free(buffer);
     fclose(file);
-    return (w);
+    return num_read;
 }
