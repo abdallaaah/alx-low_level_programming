@@ -1,63 +1,55 @@
 #include "main.h"
 /**
- * handleError - function to handle errors
- * @code: code 
- * @message: the message
- * Return: it is void
+ * main - program that copies content of file to another
+ * @argc: number of args
+ * @argv: args it self
+ * Return: void
  */
-void handleError(int code, const char *message)
-{
-dprintf(STDERR_FILENO, "Error: %s\n", message);
-exit(code);
-}
 int main(int argc, char *argv[])
 {
-const char *fileFrom = argv[1];
-const char *fileTo = argv[2];
-int fdFrom;
-struct stat st;
-int fdTo;
-char buffer[BUF_SIZE];
-ssize_t bytesRead, bytesWritten;
-mode_t permissions;
+int fd_from, fd_to, num_read, num_written;
+char buffer[BUFFER_SIZE];
+mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 if (argc != 3)
 {
-handleError(97, "Usage: cp file_from file_to");
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+exit(97);
 }
-fdFrom = open(fileFrom, O_RDONLY);
-if (fdFrom == -1)
+fd_from = open(argv[1], O_RDONLY);
+if (fd_from == -1)
 {
-handleError(98, fileFrom);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+exit(98);
 }
-if (stat(fileFrom, &st) == -1)
+fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
+if (fd_to == -1)
 {
-handleError(98, fileFrom);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+exit(99);
 }
-permissions = st.st_mode & (S_IRWXU | S_IRWXG | S_IRWXO);
-fdTo = open(fileTo, O_WRONLY | O_CREAT | O_TRUNC, permissions);
-if (fdTo == -1)
+while ((num_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 {
-handleError(99, fileTo);
-}
-while ((bytesRead = read(fdFrom, buffer, sizeof(buffer))) > 0) {
-bytesWritten = write(fdTo, buffer, bytesRead);
-if (bytesWritten == -1)
+num_written = write(fd_to, buffer, num_read);
+if (num_written != num_read)
 {
-handleError(99, fileTo);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+exit(99);
 }
 }
-if (bytesRead == -1)
+if (num_read == -1)
 {
-handleError(98, fileFrom);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+exit(98);
 }
-if (close(fdFrom) == -1)
+if (close(fd_from) == -1)
 {
-handleError(100, "Can't close fdFrom");
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+exit(100);
 }
-if (close(fdTo) == -1)
+if (close(fd_to) == -1)
 {
-handleError(100, "Can't close fdTo");
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+exit(100);
 }
 return (0);
 }
-
