@@ -1,5 +1,12 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
+/**
+ * _strcmp - compare two string
+ * @s1: sds
+ * @s2: sfgd
+ * Return: result in int
+ */
 int _strcmp(char *s1, char *s2)
 {
+return (strcmp(s1, s2));
 }
