@@ -20,12 +20,15 @@ new->next = *head;
 new->prev = NULL;
 *head = new;
 }
-else
+/*else
 {
 new->n = n;
 new->next = NULL;
 new->prev = NULL;
 *head = new;
-}
+}*/
+if (head)
 return (*head);
+else
+return (NULL);
 }
