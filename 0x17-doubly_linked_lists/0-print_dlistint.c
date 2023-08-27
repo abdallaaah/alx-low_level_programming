@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_dlistint - double line list
  * @h: head pointer
