@@ -27,5 +27,5 @@ new->next = NULL;
 new->prev = NULL;
 *head = new;
 }
-return (head);
+return (*head);
 }
