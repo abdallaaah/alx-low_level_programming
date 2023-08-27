@@ -13,20 +13,14 @@ if (new == NULL)
 {
 return (NULL);
 }
+new->n = n;
+new->prev = NULL;
+new->next = *head;
 if (*head != NULL)
 {
-new->n = n;
-new->next = *head;
-new->prev = NULL;
-*head = new;
+(*head)->prev = new;
 }
-else
-{
-new->n = n;
-new->next = NULL;
-new->prev = NULL;
 *head = new;
-}
 if (head)
 return (*head);
 else
