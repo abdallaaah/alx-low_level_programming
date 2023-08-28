@@ -18,13 +18,23 @@ while (temp)
 num++;
 temp = temp->next;
 }
-if (idx >= num)
+if (idx > num)
 return (NULL);
 temp = *h;
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
+if (idx == 0 || *h == NULL)
+{
+new->prev = NULL;
+new->next = *h;
+if (*h)
+(*h)->prev = new;
+*h = new;
+}
+else
+{
 while (temp)
 {
 if (i == idx)
@@ -39,6 +49,7 @@ break;
 i++;
 temp = temp->next;
 temp2 = temp2->next;
+}
 }
 return (new);
 }
