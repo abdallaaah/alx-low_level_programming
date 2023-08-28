@@ -8,13 +8,12 @@
 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-if (*head == NULL) // Empty list
-return -1;
-
-dlistint_t *current = *head;
+dlistint_t *current;
 unsigned int i;
-
-if (index == 0) // Delete the first node
+current = *head;
+if (*head == NULL)
+return -1;
+if (index == 0)
 {
 *head = (*head)->next;
 if (*head != NULL)
@@ -22,20 +21,14 @@ if (*head != NULL)
 free(current);
 return 1;
 }
-
-// Iterate to the node at the given index
 for (i = 0; i < index && current != NULL; i++)
 current = current->next;
-
-if (current == NULL) // Index out of bounds
+if (current == NULL)
 return -1;
-
-if (current->next != NULL) // Node is not the last node
+if (current->next != NULL)
 current->next->prev = current->prev;
-
-if (current->prev != NULL) // Node is not the first node
+if (current->prev != NULL)
 current->prev->next = current->next;
-
 free(current);
 return 1;
 }
