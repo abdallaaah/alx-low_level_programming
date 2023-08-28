@@ -13,7 +13,6 @@ while (head->next != NULL)
 {
 if (i == index)
 {
-printf("%d\n", head->n);
 flag = 0;
 break;
 }
