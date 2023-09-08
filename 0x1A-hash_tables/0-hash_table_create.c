@@ -12,6 +12,10 @@ return (NULL);
 }
 table->size = size;
 table->array = malloc(sizeof(hash_node_t) * MAX_SIZE);
+if (table->array == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < MAX_SIZE; i++)
 {
 table->array = NULL;
