@@ -3,7 +3,7 @@
 #define MAX_SIZE 100
 hash_table_t *hash_table_create(unsigned long int size)
 {
-int i = 0;
+unsigned long int i = 0;
 hash_table_t *table;
 table = malloc(sizeof(hash_table_t) * 1);
 if (table == NULL)
@@ -14,11 +14,12 @@ table->size = size;
 table->array = malloc(sizeof(hash_node_t) * size);
 if (table->array == NULL)
 {
+free(table);
 return (NULL);
 }
-for (i = 0; i < MAX_SIZE; i++)
+for (i = 0; i < size; i++)
 {
-table->array = NULL;
+table->array[i] = NULL;
 }
 return (table);
 }
