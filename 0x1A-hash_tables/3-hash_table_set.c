@@ -55,10 +55,6 @@ while (current_item != NULL)
 if (strcmp(current_item->key, key) == 0)
 {
 ht->array[0] = node;
-free(node->key);
-free(node->value);
-free(node);
-return (0);
 }
 current_item = current_item->next;
 }
