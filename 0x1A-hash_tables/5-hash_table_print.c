@@ -24,7 +24,7 @@ if (first_pair == 0)
 {
 printf(", ");
 }
-printf("'%s' : '%s'", current_item->key, current_item->value);
+printf("'%s': '%s'", current_item->key, current_item->value);
 first_pair = 0;
 current_item = current_item->next;
 }
