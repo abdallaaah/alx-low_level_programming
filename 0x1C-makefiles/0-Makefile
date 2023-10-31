@@ -1,0 +1,3 @@
+#this is a make test file
+final:
+	gcc main.c school.c -o school
