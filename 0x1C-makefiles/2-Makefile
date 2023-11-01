@@ -4,5 +4,5 @@ SRC = $(shell ls main.c school.c m.h)
 OBJ = $(shell ls main.o school.o m.h)
 NAME = school
 all:
-	gcc -c $(SRC)
-	gcc $(OBJ) -o $(NAME)
+	$(CC) -c $(SRC)
+	$(CC) $(OBJ) -o $(NAME)
