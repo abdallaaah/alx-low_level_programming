@@ -1,7 +1,7 @@
 # this is another make file
 CC = gcc 
 SRC = $(shell ls main.c school.c m.h)
-OBJ = $(shell ls *.o m.h)
+OBJ = $(SRC: .c=.o)
 NAME = school
 all:
 	$(CC) -c $(SRC)
