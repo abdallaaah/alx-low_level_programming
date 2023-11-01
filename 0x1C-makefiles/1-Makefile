@@ -1,5 +1,6 @@
 # this is another test for makefile
-$(CC) = gcc
+
+CC = gcc
 SRC = $(shell ls school.c main.c m.h)
 all:
 	$(CC) $(SRC) -o school
